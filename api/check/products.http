@@ -1,1 +1,12 @@
 GET http://localhost:7000/products
+
+###
+POST http://localhost:7000/auth/register
+Content-Type: application/json
+
+{
+  "email": "juliaryan@y7mail.com",
+  "firstName": "Julia",
+  "lastName": "Ryan",
+  "password": "password123"
+}
