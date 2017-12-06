@@ -8,7 +8,8 @@ server.use(bodyParser.json())
 
 // Routes
 server.use([
-  require('./routes/products')
+  require('./routes/products'),
+  require('./routes/auth')
 ])
 
 server.listen(7000, (error) => {
