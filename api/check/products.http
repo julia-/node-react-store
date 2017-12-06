@@ -1,6 +1,7 @@
 GET http://localhost:7000/products
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imp1bGlhcnlhbkB5N21haWwuY29tIiwiaWF0IjoxNTEyNTM0NzU4LCJleHAiOjE1MTMxMzk1NTgsInN1YiI6IjVhMjc1MDgwYmYwNmMzNGMyZmUyZDg3NSJ9.iWNm8-byVpSt17CGTNulw3J3l7CirvHUHxEjhiSrvQE
 
-###
+### Registering
 POST http://localhost:7000/auth/register
 Content-Type: application/json
 
@@ -8,5 +9,14 @@ Content-Type: application/json
   "email": "juliaryan@y7mail.com",
   "firstName": "Julia",
   "lastName": "Ryan",
+  "password": "password123"
+}
+
+### Signing in
+POST http://localhost:7000/auth
+Content-Type: application/json
+
+{
+  "email": "juliaryan@y7mail.com",
   "password": "password123"
 }

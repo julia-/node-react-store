@@ -8,11 +8,14 @@ router.post('/auth/register',
   /* Middleware to handle the registration process */
   authMiddleware.register,
   /* JSON handler */
-  (req, res) => {
-    res.json({
-      user: req.user
-    })
-  }
+  authMiddleware.signJWTForUser
+)
+
+router.post('/auth',
+  /* Middleware to handle the sign in process */
+  authMiddleware.signIn,
+  /* JSON handler */
+  authMiddleware.signJWTForUser
 )
 
 module.exports = router

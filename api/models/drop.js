@@ -1,5 +1,5 @@
 const Product = require('./Product')
-const Product = require('./User')
+const User = require('./User')
 
 Product.deleteMany()
   .then(() => {
