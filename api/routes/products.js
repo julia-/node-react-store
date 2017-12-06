@@ -5,10 +5,10 @@ const router = new express.Router()
 
 router.get('/products', (req, res) => {
   Product.find()
-    .then((products) => {
+    .then(products => {
       res.json(products)
     })
-    .catch((error) => {
+    .catch(error => {
       res.json({ error })
     })
 })
