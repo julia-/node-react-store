@@ -3,11 +3,12 @@ import './App.css';
 import SigninForm from './components/SigninForm'
 import { signIn } from './api/auth'
 import { listProducts } from './api/products'
+import { getDecodedToken } from './api/token'
 // import { setToken } from './api/init'
 
 class App extends Component {
   state = {
-    decodedToken: null
+    decodedToken: getDecodedToken() // Restore the previous signed in data
   }
   onSignIn = ({ email, password }) => {
     console.log('App received', { email, password })
