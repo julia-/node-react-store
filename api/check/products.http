@@ -20,3 +20,7 @@ Content-Type: application/json
   "email": "juliaryan@y7mail.com",
   "password": "password123"
 }
+
+###
+GET http://localhost:7000/wishlist
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imp1bGlhcnlhbkB5N21haWwuY29tIiwiaWF0IjoxNTEyNTM0NzU4LCJleHAiOjE1MTMxMzk1NTgsInN1YiI6IjVhMjc1MDgwYmYwNmMzNGMyZmUyZDg3NSJ9.iWNm8-byVpSt17CGTNulw3J3l7CirvHUHxEjhiSrvQE

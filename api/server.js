@@ -7,12 +7,13 @@ const server = express()
 
 // Middleware
 server.use(bodyParser.json()) // Allows JSON uploads (POST/PUT/PATCH)
-server.use(cors()) // ALlow other origins to access i.e. react front-end
+server.use(cors()) // Allows other origins to access i.e. react front-end
 server.use(authMiddleware.initialize) // Start passport
 
 // Routes
 server.use([
   require('./routes/products'),
+  require('./routes/wishlist'),
   require('./routes/auth')
 ])
 
